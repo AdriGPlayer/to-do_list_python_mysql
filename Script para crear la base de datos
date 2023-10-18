@@ -1,0 +1,25 @@
+-- CREAR BASE DE DATOS
+CREATE DATABASE todo_list;
+ -- CREAR TABLA DE USUARIOS
+ CREATE TABLE usuarios(
+	id int auto_increment,
+    name varchar(50),
+    last_name varchar(50),
+    email varchar(50),
+    password varchar(50),
+    primary key(id)
+ );
+ 
+ -- CREAR TABLA DE TAREAS
+ CREATE TABLE tareas(
+	id int auto_increment,
+    email varchar(50),
+    title varchar(50),
+    description varchar(500),
+    date_task date,
+    primary key(id)
+ );
+
+
+
+-- (Nota) puedes agregar a un usuario admin desde tu administrador de bases de datos favorito
